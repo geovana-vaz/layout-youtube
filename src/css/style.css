@@ -1,0 +1,63 @@
+.container{
+    display: grid;
+    max-width: 900px;
+    grid-template-areas: "destaque propaganda"
+                         "destaque outros";
+    grid-template-columns: 1fr 270px;
+    grid-template-rows: 56px 1fr;
+    font-family: 'Roboto', sans-serif;
+    padding: 35px;
+}
+
+.destaque{
+    grid-area: destaque;
+    gap: 9px;
+    margin: 38px 17px 38px 35px;
+}
+
+.destaque h1{
+   font-weight: 700;
+    font-size: 18px;
+}
+
+.destaque .visualizacoes{
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.destaque .descricao{
+    font-weight: 300px;
+    font-size: 16px;
+}
+
+.propaganda{
+    margin-top: 38px;
+    grid-area: propaganda;
+    background-color: aqua;
+}
+
+.propaganda .texto-propaganda {
+    font-weight: 300;
+    font-size: 11px;
+}
+
+.outros{
+    grid-area: outros;
+    margin-top: 71px;
+}
+
+.outros .video {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.outros h2{
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.outros p{
+    font-weight: 300;
+    font-size: 11px;
+}
